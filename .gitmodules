@@ -1,0 +1,6 @@
+[submodule "bundle/traces"]
+	path = bundle/traces
+	url = https://github.com/xtal8/traces.vim
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
