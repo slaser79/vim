@@ -23,6 +23,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on    " required
 
+
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -92,3 +93,6 @@ nnoremap <S-Tab> :bprevious<CR>
 nnoremap <C-X> :bdelete<CR>
 set encoding=utf-8
 set rop=type:directx,gamma:1.0,contrast:0.5,level:1,geom:1,renmode:4,taamode:1
+
+"Setting for exuberant Ctags
+let  $PATH .= ';C:\Users\cex\Downloads\ctags58\ctags58' 
