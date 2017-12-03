@@ -64,7 +64,7 @@ if has("gui_running")
   elseif has("gui_macvim")
     set guifont=Menlo\ Regular:h14
   elseif has("gui_win32")
-    set guifont=Consolas:h10:cANSI
+    set guifont=Inconsolata\ for\ Powerline:h10
   endif
 endif
 
@@ -84,3 +84,11 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+"setup for vimairline
+let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts=1
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+nnoremap <C-X> :bdelete<CR>
+set encoding=utf-8
+set rop=type:directx,gamma:1.0,contrast:0.5,level:1,geom:1,renmode:4,taamode:1
